@@ -4,8 +4,8 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import SingleProject from './components/SingleProject';
-import Blog from './components/Blog';
-import SingleBlog from './components/SingleBlog';
+import Post from './components/Post';
+import SinglePost from './components/SinglePost';
 import NavBar from './components/NavBar';
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
          <Route component={Contact} path='/contact' />
          <Route component={SingleProject} path='/projects/:slug'/>
          <Route component={Projects} path='/projects' />
-         <Route component={SingleBlog} path='/blog/:slug'/>
-         <Route component={Blog} path='/blog'/>
+         <Route component={SinglePost} path='/post/:slug'/>
+         <Route component={Post} path='/post'/>
        </Switch>
     </BrowserRouter>
   )

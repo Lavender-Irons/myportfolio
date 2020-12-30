@@ -1,12 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import me from '../images/me.png';
 
 export default function NavBar(){
     return (
         <header className="bg-purple-900">
             <div className="container mx-auto flex justify-between">
                 <nav className="flex">
+
+                    {/* <img 
+                    src={me}
+                    alt="me"
+                    className=""
+                    /> */}
 
                     <NavLink 
                     to='/' 
@@ -31,10 +38,10 @@ export default function NavBar(){
                     </NavLink>
 
                     <NavLink 
-                    to='/blog' 
+                    to='/post' 
                     activeClassName="text-indigo-300"
                     className="inflex-flex items-center py-6 px-3 mr-4 text-white hover:text-black text-3xl font-bold cursive">
-                    Blog
+                    Post
                     </NavLink>
 
                     <NavLink 
